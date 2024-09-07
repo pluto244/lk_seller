@@ -1,0 +1,1 @@
+export {setProducts, default as productReducer } from './model/slice';
