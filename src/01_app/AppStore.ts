@@ -1,10 +1,14 @@
-import { productReducer } from '@/05_entitties/product';
 import { configureStore } from '@reduxjs/toolkit';
+import { productReducer } from '@/05_entitties/product';
+import { api } from '@/06_shared/api/api';
 
 const store = configureStore({
-    reducer: {
-        product: productReducer
-    }
+  reducer: {
+    product: productReducer,
+    [api.reducerPath]: api.reducer,
+  },
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware().concat(api.middleware),
 });
 
 export type RootState = ReturnType<typeof store.getState>;

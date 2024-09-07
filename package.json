@@ -27,14 +27,14 @@
     "typescript": "^4.9.5",
     "vite": "^5.4.3"
   },
-"scripts": {
-    "dev": "vite",                
-    "start": "vite",               
-    "build": "vite build",         
-    "preview": "vite preview",     
-    "server": "json-server --watch db.json --port 3000", 
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx", 
-    "test": "jest"               
+  "scripts": {
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "server": "json-server --watch db.json --port 3000",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "test": "jest"
   },
   "eslintConfig": {
     "extends": [
